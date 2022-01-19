@@ -1,0 +1,23 @@
+.espece{
+    width: 15vw;
+    color:blueviolet;
+}
+
+.displayer
+{
+    background-image: url("/images/boomer.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+}
+
+.text
+{
+    color: brown;
+}
+
+.items
+{
+    list-style-type: none !important;
+}
