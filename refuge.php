@@ -1,7 +1,8 @@
 <?php
 
     require 'crud/db.php';
-    
+
+    $connection = new PDO('mysql:host=localhost;dbname=pets', 'root', 'root');
 
     $sql = 'SELECT * FROM refuge';
     $statement = $connection->prepare($sql);

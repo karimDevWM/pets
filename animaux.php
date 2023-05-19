@@ -2,6 +2,8 @@
 
     require 'crud/db.php';
 
+    $connection = new PDO('mysql:host=localhost;dbname=pets', 'root', 'root');
+
     $stmt = $connection->query("SELECT * FROM animaux
     left JOIN refuge ON refuge.id_refuge = animaux.fk_refuge
     left join clients ON clients.id_clients = animaux.fk_clients");

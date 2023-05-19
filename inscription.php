@@ -2,6 +2,8 @@
 
     require 'crud/db.php';
 
+    $connection = new PDO('mysql:host=localhost;dbname=pets', 'root', 'root');
+
     $message = '';
 if (  isset($_POST['nom_clients'])&&
       isset($_POST['prenom_clients'])&&
